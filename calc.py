@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import sys
 
 def main():
@@ -7,11 +8,15 @@ def main():
         return
 
     expression = ''.join(sys.argv[1:]).replace(" ", "")
-
-    print("Unsupported operator.")
-    return
+    if '-' in expression:
+        num1, num2 = expression.split('-')
+        result = float(num1) - float(num2)
+    else:
+        print("Unsupported operator.")
+        return
 
     print(result)
 
 if __name__ == "__main__":
-    main()
+	main()
+

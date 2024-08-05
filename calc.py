@@ -21,6 +21,9 @@ def main():
     elif '/' in expression:
         num1, num2 = expression.split('/')
         result = float(num1) / float(num2)
+    elif '^' in expression:
+        num1, num2 = expression.split('^')
+        result = float(num1) ** float(num2)
     else:
         print("Unsupported operator.")
         return
@@ -28,6 +31,4 @@ def main():
     print(result)
 
 if __name__ == "__main__":
-	main()
-
-
+    main()

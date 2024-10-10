@@ -7,6 +7,7 @@ test_cases=(
     "2*3,6.0"
     "6/2,3.0"
     "3*3,9.0"
+    "2^3,8.0"
 )
 
 # Function to run a single test case

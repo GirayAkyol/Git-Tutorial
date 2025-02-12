@@ -3,6 +3,8 @@
 # Define test cases as an array of tuples (input, expected_output)
 test_cases=(
     "2+2,4.0"
+    "5-2,3.0"
+    "2*3,6.0"
 )
 
 # Function to run a single test case
